@@ -1,0 +1,39 @@
+{
+  "model_name": "Linear SVM",
+  "config_id": "B",
+  "task": "application",
+  "test_samples": 5000,
+  "accuracy": 0.9566,
+  "macro_f1": 0.8343,
+  "weighted_f1": 0.9585,
+  "macro_precision": 0.8226,
+  "macro_recall": 0.8665,
+  "total_inference_time_sec": 0.0015,
+  "latency_per_sample_ms": 0.0003,
+  "per_class": {
+    "file_transfer": {
+      "precision": 0.9873,
+      "recall": 0.9714,
+      "f1_score": 0.9793,
+      "support": 4474.0
+    },
+    "remote_access": {
+      "precision": 0.8586,
+      "recall": 0.787,
+      "f1_score": 0.8213,
+      "support": 108.0
+    },
+    "streaming": {
+      "precision": 0.8349,
+      "recall": 0.7564,
+      "f1_score": 0.7937,
+      "support": 234.0
+    },
+    "voip_chat": {
+      "precision": 0.6098,
+      "recall": 0.9511,
+      "f1_score": 0.7431,
+      "support": 184.0
+    }
+  }
+}

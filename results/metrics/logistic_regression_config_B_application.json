@@ -1,0 +1,39 @@
+{
+  "model_name": "Logistic Regression",
+  "config_id": "B",
+  "task": "application",
+  "test_samples": 5000,
+  "accuracy": 0.9342,
+  "macro_f1": 0.8222,
+  "weighted_f1": 0.9439,
+  "macro_precision": 0.7674,
+  "macro_recall": 0.9327,
+  "total_inference_time_sec": 0.0011,
+  "latency_per_sample_ms": 0.0002,
+  "per_class": {
+    "file_transfer": {
+      "precision": 0.996,
+      "recall": 0.9352,
+      "f1_score": 0.9646,
+      "support": 4474.0
+    },
+    "remote_access": {
+      "precision": 0.824,
+      "recall": 0.9537,
+      "f1_score": 0.8841,
+      "support": 108.0
+    },
+    "streaming": {
+      "precision": 0.8406,
+      "recall": 0.9017,
+      "f1_score": 0.8701,
+      "support": 234.0
+    },
+    "voip_chat": {
+      "precision": 0.409,
+      "recall": 0.9402,
+      "f1_score": 0.57,
+      "support": 184.0
+    }
+  }
+}

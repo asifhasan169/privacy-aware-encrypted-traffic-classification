@@ -1,0 +1,29 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Datasets (Raw & Processed)
+archive/
+data/
+
+# Model Checkpoints and Serialized Weights (Easily reproduced via src/train.py)
+models/*.joblib
+*.joblib
+
+# Logs and temporary files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDE configurations
+.idea/
+.vscode/

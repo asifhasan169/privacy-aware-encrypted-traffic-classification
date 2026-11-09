@@ -1,0 +1,67 @@
+! ====================================================================
+! Cisco 2911 Router Configuration Script (Router-on-a-Stick)
+! Project: Privacy-Aware Encrypted Network Traffic Classification (TechCorp)
+! Target: Cisco Packet Tracer R1 (Router 2911)
+! ====================================================================
+
+enable
+configure terminal
+hostname R1-TechCorp-Core
+
+! Enable physical gigabit interface connecting to SW1
+interface GigabitEthernet0/0
+ no shutdown
+ description Uplink to SW1 Central Switch
+ exit
+
+! Subinterface for VLAN 10 (HR)
+interface GigabitEthernet0/0.10
+ description Gateway for HR Department (VLAN 10)
+ encapsulation dot1Q 10
+ ip address 192.168.10.1 255.255.255.0
+ no shutdown
+ exit
+
+! Subinterface for VLAN 20 (Finance)
+interface GigabitEthernet0/0.20
+ description Gateway for Finance Department (VLAN 20)
+ encapsulation dot1Q 20
+ ip address 192.168.20.1 255.255.255.0
+ no shutdown
+ exit
+
+! Subinterface for VLAN 30 (IT Support)
+interface GigabitEthernet0/0.30
+ description Gateway for IT Department (VLAN 30)
+ encapsulation dot1Q 30
+ ip address 192.168.30.1 255.255.255.0
+ no shutdown
+ exit
+
+! Subinterface for VLAN 40 (Guest Network)
+interface GigabitEthernet0/0.40
+ description Gateway for Guest Segment (VLAN 40)
+ encapsulation dot1Q 40
+ ip address 192.168.40.1 255.255.255.0
+ no shutdown
+ exit
+
+! Subinterface for VLAN 50 (Internal Services / Server)
+interface GigabitEthernet0/0.50
+ description Gateway for Enterprise Server Farm (VLAN 50)
+ encapsulation dot1Q 50
+ ip address 192.168.50.1 255.255.255.0
+ no shutdown
+ exit
+
+! Subinterface for VLAN 60 (Security & Monitoring Workstation)
+interface GigabitEthernet0/0.60
+ description Gateway for Security Monitoring Station (VLAN 60)
+ encapsulation dot1Q 60
+ ip address 192.168.60.1 255.255.255.0
+ no shutdown
+ exit
+
+end
+write memory
+

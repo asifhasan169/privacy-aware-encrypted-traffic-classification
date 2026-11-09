@@ -1,0 +1,18 @@
+{
+  "name": "Configuration C (Strict Minimized)",
+  "description": "Minimal aggregate features (10 features) requiring lowest computational state and preserving maximum flow privacy.",
+  "feature_count": 10,
+  "features": [
+    "FIAT",
+    "BIAT",
+    "MIAT",
+    "Forward_abs_mean",
+    "Forward_std_dev",
+    "Backward_abs_mean",
+    "Backward_std_dev",
+    "Forward_med",
+    "Backward_med",
+    "Forward_rng"
+  ]
+}
+

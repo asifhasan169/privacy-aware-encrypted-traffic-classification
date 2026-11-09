@@ -1,0 +1,13 @@
+Model,Config,Features,Accuracy,Macro_F1,Weighted_F1,Train_Time_s,Latency_ms_per_flow
+Logistic Regression,A,43,0.739,0.7389,0.7398,0.34,0.0001
+Random Forest,A,43,0.9998,0.9998,0.9998,0.36,0.0061
+Linear SVM,A,43,0.7238,0.7235,0.7253,35.85,0.0002
+XGBoost,A,43,0.9994,0.9994,0.9994,0.45,0.001
+Logistic Regression,B,29,0.6334,0.6296,0.6373,0.34,0.0002
+Random Forest,B,29,0.9998,0.9998,0.9998,0.43,0.0085
+Linear SVM,B,29,0.6422,0.6373,0.646,3.83,0.0001
+XGBoost,B,29,0.9998,0.9998,0.9998,0.24,0.0008
+Logistic Regression,C,10,0.5084,0.5078,0.5045,0.08,0.0002
+Random Forest,C,10,0.9998,0.9998,0.9998,0.34,0.0083
+Linear SVM,C,10,0.5078,0.5072,0.5038,0.1,0.0002
+XGBoost,C,10,0.9998,0.9998,0.9998,0.14,0.0007

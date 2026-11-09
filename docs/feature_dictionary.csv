@@ -1,0 +1,45 @@
+feature_name,family,description,unit,sensitivity,config_A,config_B,config_C
+FIAT,Timing,Forward Inter-Arrival Time mean,Seconds,Low,Yes,Yes,Yes
+BIAT,Timing,Backward Inter-Arrival Time mean,Seconds,Low,Yes,Yes,Yes
+MIAT,Timing,Mean Inter-Arrival Time across both directions,Seconds,Low,Yes,Yes,Yes
+Forward_abs_mean,Packet Size,Absolute mean of forward packet sizes,Bytes,Medium,Yes,Yes,Yes
+Forward_std_dev,Packet Size,Standard deviation of forward packet sizes,Bytes,Medium,Yes,Yes,Yes
+Backward_abs_mean,Packet Size,Absolute mean of backward packet sizes,Bytes,Medium,Yes,Yes,Yes
+Backward_std_dev,Packet Size,Standard deviation of backward packet sizes,Bytes,Medium,Yes,Yes,Yes
+Forward_entropy,Information Entropy,Information entropy of forward packet size distribution,Entropy units,Medium,Yes,Yes,No
+Backward_entropy,Information Entropy,Information entropy of backward packet size distribution,Entropy units,Medium,Yes,Yes,No
+Min_FIAT,Timing,Minimum forward inter-arrival time,Seconds,Low,Yes,Yes,No
+Max_FIAT,Timing,Maximum forward inter-arrival time,Seconds,Low,Yes,Yes,No
+Std_FIAT,Timing,Standard deviation of forward inter-arrival time,Seconds,Low,Yes,Yes,No
+Var_coeff_FIAT,Timing,Variance coefficient of forward inter-arrival time,Dimensionless,Low,Yes,Yes,No
+Min_BIAT,Timing,Minimum backward inter-arrival time,Seconds,Low,Yes,Yes,No
+Max_BIAT,Timing,Maximum backward inter-arrival time,Seconds,Low,Yes,Yes,No
+Std_BIAT,Timing,Standard deviation of backward inter-arrival time,Seconds,Low,Yes,Yes,No
+Var_coeff_BIAT,Timing,Variance coefficient of backward inter-arrival time,Dimensionless,Low,Yes,Yes,No
+Forward_med,Packet Size,Median forward packet size,Bytes,Medium,Yes,Yes,Yes
+Forward_mod,Packet Size,Mode forward packet size,Bytes,Medium,Yes,Yes,No
+Forward_rng,Packet Size,Range (Max - Min) of forward packet sizes,Bytes,Medium,Yes,Yes,Yes
+Forward_iqr,Packet Size,Interquartile range of forward packet sizes,Bytes,Medium,Yes,Yes,No
+Forward_var_coeff,Packet Size,Variance coefficient of forward packet sizes,Dimensionless,Medium,Yes,Yes,No
+Forward_rms,Packet Size,Root mean square of forward packet sizes,Bytes,Medium,Yes,Yes,No
+Backward_med,Packet Size,Median backward packet size,Bytes,Medium,Yes,Yes,Yes
+Backward_mod,Packet Size,Mode backward packet size,Bytes,Medium,Yes,Yes,No
+Backward_rng,Packet Size,Range (Max - Min) of backward packet sizes,Bytes,Medium,Yes,Yes,No
+Backward_iqr,Packet Size,Interquartile range of backward packet sizes,Bytes,Medium,Yes,Yes,No
+Backward_var_coeff,Packet Size,Variance coefficient of backward packet sizes,Dimensionless,Medium,Yes,Yes,No
+Backward_rms,Packet Size,Root mean square of backward packet sizes,Bytes,Medium,Yes,Yes,No
+fw_c1,Wavelet (DWT),Forward Discrete Wavelet Transform Level 1 detail coefficient,DWT energy,High,Yes,No,No
+fw_c2,Wavelet (DWT),Forward Discrete Wavelet Transform Level 2 detail coefficient,DWT energy,High,Yes,No,No
+fw_c3,Wavelet (DWT),Forward Discrete Wavelet Transform Level 3 detail coefficient,DWT energy,High,Yes,No,No
+fw_c4,Wavelet (DWT),Forward Discrete Wavelet Transform Level 4 detail coefficient,DWT energy,High,Yes,No,No
+fw_c5,Wavelet (DWT),Forward Discrete Wavelet Transform Level 5 detail coefficient,DWT energy,High,Yes,No,No
+fw_c6,Wavelet (DWT),Forward Discrete Wavelet Transform Level 6 detail coefficient,DWT energy,High,Yes,No,No
+fw_c7,Wavelet (DWT),Forward Discrete Wavelet Transform Level 7 approximation coefficient,DWT energy,High,Yes,No,No
+bw_c1,Wavelet (DWT),Backward Discrete Wavelet Transform Level 1 detail coefficient,DWT energy,High,Yes,No,No
+bw_c2,Wavelet (DWT),Backward Discrete Wavelet Transform Level 2 detail coefficient,DWT energy,High,Yes,No,No
+bw_c3,Wavelet (DWT),Backward Discrete Wavelet Transform Level 3 detail coefficient,DWT energy,High,Yes,No,No
+bw_c4,Wavelet (DWT),Backward Discrete Wavelet Transform Level 4 detail coefficient,DWT energy,High,Yes,No,No
+bw_c5,Wavelet (DWT),Backward Discrete Wavelet Transform Level 5 detail coefficient,DWT energy,High,Yes,No,No
+bw_c6,Wavelet (DWT),Backward Discrete Wavelet Transform Level 6 detail coefficient,DWT energy,High,Yes,No,No
+bw_c7,Wavelet (DWT),Backward Discrete Wavelet Transform Level 7 approximation coefficient,DWT energy,High,Yes,No,No
+

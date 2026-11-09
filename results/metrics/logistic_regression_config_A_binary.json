@@ -1,0 +1,27 @@
+{
+  "model_name": "Logistic Regression",
+  "config_id": "A",
+  "task": "binary",
+  "test_samples": 5000,
+  "accuracy": 0.739,
+  "macro_f1": 0.7389,
+  "weighted_f1": 0.7398,
+  "macro_precision": 0.7646,
+  "macro_recall": 0.768,
+  "total_inference_time_sec": 0.0007,
+  "latency_per_sample_ms": 0.0001,
+  "per_class": {
+    "nonvpn": {
+      "precision": 0.913,
+      "recall": 0.6266,
+      "f1_score": 0.7432,
+      "support": 3013.0
+    },
+    "vpn": {
+      "precision": 0.6163,
+      "recall": 0.9094,
+      "f1_score": 0.7347,
+      "support": 1987.0
+    }
+  }
+}
