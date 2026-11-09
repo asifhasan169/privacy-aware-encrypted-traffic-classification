@@ -1,0 +1,5 @@
+Condition,Features_Retained,Features_Removed,Accuracy,Macro_F1,Weighted_F1,Latency_ms_per_flow
+All Features (Baseline Config A),43,0,0.997,0.9903,0.997,0.0085
+Ablate Timing (No Inter-Arrival),32,11,0.996,0.9859,0.9961,0.008
+Ablate Packet Sizes (No Size Moments),25,18,0.9778,0.9356,0.9788,0.0084
+Ablate Wavelets (No DWT Sub-bands),29,14,0.997,0.9903,0.997,0.0084

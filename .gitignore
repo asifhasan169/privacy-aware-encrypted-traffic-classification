@@ -1,3 +1,7 @@
+# ====================================================================
+# Git Ignore Rules for Privacy-Aware Encrypted Traffic Classification
+# ====================================================================
+
 # Python bytecode and caches
 __pycache__/
 *.py[cod]
@@ -10,20 +14,26 @@ venv/
 ENV/
 env/
 
-# Datasets (Raw & Processed)
+# Datasets (Raw, prepared, and packet CSVs - 3.8+ GB)
 archive/
 data/
 
-# Model Checkpoints and Serialized Weights (Easily reproduced via src/train.py)
+# Model Checkpoints and Serialized Weights (Easily regenerated via src/train.py)
 models/*.joblib
 *.joblib
 
-# Logs and temporary files
-*.log
-*.tmp
+# Raw Microsoft Word assignment guides (Keep repo pure code & markdown)
+*.docx
+*.doc
+
+# Bloated per-run metric dumps (Summary CSVs in results/metrics/ are preserved)
+results/metrics/*.json
+results/confusion_matrices/
+
+# Operating system and editor artifacts
 .DS_Store
 Thumbs.db
-
-# IDE configurations
+*.log
+*.tmp
 .idea/
 .vscode/
